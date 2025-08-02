@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'show']);
 Route::get('/services', [ServiceController::class, 'index'])->name('services.services');
+Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.portfolio');
 
