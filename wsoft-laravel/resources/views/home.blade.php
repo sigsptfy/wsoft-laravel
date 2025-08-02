@@ -16,7 +16,7 @@
         content="Wsoft, themeforest template, app, app landing page, App Showcase, cryptocurrency, digital studio, saas, saas landing, saas theme, software, software company website, software startup, startup, startup landing page, startup wordpress, technology">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -24,11 +24,11 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&amp;display=swap"
         rel="stylesheet">
     <!-- Plugin Style CSSS -->
-    <link rel="stylesheet" href="assets/css/theme-plugins.min.css">
+    <link rel="stylesheet" href="{{ asset('css/theme-plugins.min.css') }}">
     <!-- Main Template CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <!-- Home Default CSS -->
-    <link rel="stylesheet" href="assets/css/home-default.css">
+    <link rel="stylesheet" href="{{ asset('css/home-default.css') }}">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
     <!-- Page loader Start -->
     <div id="pageloader">
         <div class="loader-item">
-            <img src="assets/images/tail-spin.svg" width="80" alt="">
+            <img src="{{ asset('images/tail-spin.svg') }}" width="80" alt="">
         </div>
     </div>
     <!-- Page loader End -->
@@ -72,9 +72,9 @@
             </div>
             <nav class="navbar navbar-expand-lg header-anim">
                 <div class="container">
-                    <a class="navbar-brand" href="index.php"><img src="assets/images/logo_purple.svg"
+                    <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo_purple.svg') }}"
                             alt=""></a>
-                    <!-- <a class="navbar-brand" href="index.php"><img src="assets/images/logo_purple1.svg" alt=""></a> -->
+                    <!-- <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo_purple1.svg') }}" alt=""></a> -->
 
                     <form class="d-flex order-lg-last ms-3 align-items-center">
                         <a href="#" id="search_home">
@@ -96,8 +96,8 @@
 
                     <div class="navbar-collapse offcanvas offcanvas-start offcanvas-collapse" id="navbarCollapse">
                         <div class="offcanvas-header">
-                            <a class="navbar-brand" href="index.php"><img src="assets/images/logo_dark.svg"
-                                    alt=""></a>
+                            <a class="navbar-brand" href="{{ url('/') }}"><img
+                                    src="{{ asset('images/logo_dark.svg') }}" alt=""></a>
                             <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -108,16 +108,16 @@
 
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="pages/home/home.php" aria-expanded="false">Home</a>
+                                    <a class="nav-link" href="{{ url('/') }}" aria-expanded="false">Home</a>
                                     <!-- <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.php">Home Default</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/') }}">Home Default</a></li>
                                     <li><a class="dropdown-item" href="index-digital-marketing.html">Home Digital Marketing</a></li>
                                     <li><a class="dropdown-item" href="index-software.html">Home Software</a></li>
                                     <li><a class="dropdown-item" href="index-coworking.html">Home Coworking</a></li>
                                 </ul> -->
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="pages/home/services.php"
+                                    <a class="nav-link" href="{{ url('/services') }}"
                                         aria-expanded="false">Services</a>
                                 </li>
                                 <!-- <li class="nav-item dropdown">
@@ -131,10 +131,10 @@
                                 </ul>
                             </li> -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="portfolio-2col.html"
+                                    <a class="nav-link" href="{{ url('/portfolio') }}"
                                         aria-expanded="false">Portfolio</a>
                                     <!-- <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="portfolio-2col.html">Portfolio 2 Column</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/portfolio') }}">Portfolio 2 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-3col.html">Portfolio 3 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-4col.html">Portfolio 4 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a></li>
@@ -150,25 +150,27 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="faqs.html" aria-expanded="false">FAQs</a>
+                                    <a class="nav-link" href="{{ url('/faqs') }}" aria-expanded="false">FAQs</a>
                                     <!-- <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="portfolio-2col.html">Portfolio 2 Column</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/portfolio') }}">Portfolio 2 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-3col.html">Portfolio 3 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-4col.html">Portfolio 4 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a></li>
                                 </ul> -->
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="contact.html" aria-expanded="false">Contact Us</a>
+                                    <a class="nav-link" href="{{ url('/contact') }}" aria-expanded="false">Contact
+                                        Us</a>
                                     <!-- <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="portfolio-2col.html">Portfolio 2 Column</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/portfolio') }}">Portfolio 2 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-3col.html">Portfolio 3 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-4col.html">Portfolio 4 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a></li>
                                 </ul> -->
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="coming-soon.html" aria-expanded="false">Coming Soon</a>
+                                    <a class="nav-link" href="{{ url('/coming-soon') }}"
+                                        aria-expanded="false">Coming Soon</a>
                                     <!-- <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="portfolio-2col.html">Portfolio 2 Column</a></li>
                                     <li><a class="dropdown-item" href="portfolio-3col.html">Portfolio 3 Column</a></li>
@@ -209,10 +211,10 @@
             <div class="container pos-rel">
                 <div class="banner-abstract-shape"></div>
                 <div class="matrix-vertical">
-                    <img src="assets/images/matrix_vertical.svg" alt="">
+                    <img src="{{ asset('images/matrix_vertical.svg') }}" alt="">
                 </div>
                 <div class="rectangle-small">
-                    <img src="assets/images/rectangle_small.svg" alt="">
+                    <img src="{{ asset('images/rectangle_small.svg') }}" alt="">
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-7">
@@ -227,15 +229,16 @@
                                     <a href="javascript:" class="btn btn-primary" data-trigger="#signup"><span
                                             class="outer-wrap"><span data-text="Get Started">Get
                                                 Started</span></span></a>
-                                    <a href="about-us.html" class="btn btn-secondary"><span class="outer-wrap"><span
-                                                data-text="Learn More">Learn More</span></span></a>
+                                    <a href="{{ url('/about') }}" class="btn btn-secondary"><span
+                                            class="outer-wrap"><span data-text="Learn More">Learn
+                                                More</span></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="banner-img">
-                            <img src="assets/images/home-default-banner-img.png" alt="">
+                            <img src="{{ asset('images/home-default-banner-img.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -306,32 +309,32 @@
                 <div class="owl-carousel owl-theme top-right-arrow" id="client-home-default">
                     <div class="item">
                         <div class="img-partner">
-                            <img src="assets/images/partner/img-client1.png" alt="">
+                            <img src="{{ asset('images/partner/img-client1.png') }}" alt="">
                         </div>
                     </div>
                     <div class="item">
                         <div class="img-partner">
-                            <img src="assets/images/partner/img-client2.png" alt="">
+                            <img src="{{ asset('images/partner/img-client2.png') }}" alt="">
                         </div>
                     </div>
                     <div class="item">
                         <div class="img-partner">
-                            <img src="assets/images/partner/img-client3.png" alt="">
+                            <img src="{{ asset('images/partner/img-client3.png') }}" alt="">
                         </div>
                     </div>
                     <div class="item">
                         <div class="img-partner">
-                            <img src="assets/images/partner/img-client4.png" alt="">
+                            <img src="{{ asset('images/partner/img-client4.png') }}" alt="">
                         </div>
                     </div>
                     <div class="item">
                         <div class="img-partner">
-                            <img src="assets/images/partner/img-client5.png" alt="">
+                            <img src="{{ asset('images/partner/img-client5.png') }}" alt="">
                         </div>
                     </div>
                     <div class="item">
                         <div class="img-partner">
-                            <img src="assets/images/partner/img-client6.png" alt="">
+                            <img src="{{ asset('images/partner/img-client6.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -343,7 +346,7 @@
         <section class="section-spacing home-ideas-wrap">
             <div class="container pos-rel">
                 <div class="square-top">
-                    <img src="assets/images/square_large.svg" alt="">
+                    <img src="{{ asset('images/square_large.svg') }}" alt="">
                 </div>
                 <div class="row">
                     <div class="col-xl-3 col-lg-6 col-md-6">
@@ -356,7 +359,7 @@
                                 <li>Enterprise-grade solutions</li>
                             </ul>
 
-                            <a href="our-services.html" class="btn btn-default btn-rounded mt-3"><span
+                            <a href="{{ url('/services') }}" class="btn btn-default btn-rounded mt-3"><span
                                     class="outer-wrap"><span data-text="View All Services">View All
                                         Services</span></span></a>
                         </div>
@@ -372,7 +375,7 @@
                                 <p>We create responsive and dynamic websites using modern frameworks and technologies.
                                 </p>
                                 <div class="arrow-icon">
-                                    <a href="service-single.html"><i class="srn-arrow-right"></i></a>
+                                    <a href="{{ url('/services') }}"><i class="srn-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +391,7 @@
                                 <p>Native and cross-platform mobile applications that deliver exceptional user
                                     experiences.</p>
                                 <div class="arrow-icon">
-                                    <a href="service-single.html"><i class="srn-arrow-right"></i></a>
+                                    <a href="{{ url('/services') }}"><i class="srn-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -404,7 +407,7 @@
                                 <p>Tailored software solutions designed to meet your specific business requirements and
                                     goals.</p>
                                 <div class="arrow-icon">
-                                    <a href="service-single.html"><i class="srn-arrow-right"></i></a>
+                                    <a href="{{ url('/services') }}"><i class="srn-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -452,7 +455,7 @@
                             </div>
                             <!-- End Progressbar -->
                         </div>
-                        <a href="about-us.html" class="btn btn-secondary"><span class="outer-wrap"><span
+                        <a href="{{ url('/about') }}" class="btn btn-secondary"><span class="outer-wrap"><span
                                     data-text="Learn More">Learn More</span></span></a>
                     </div>
                     <div class="col-lg-7 mt-5 mt-lg-0">
@@ -464,7 +467,7 @@
                             </div>
                         </div>
                         <div class="video-bg-off wow fadeInUp">
-                            <img src="assets/images/video_bg_off.png" alt="">
+                            <img src="{{ asset('images/video_bg_off.png') }}" alt="">
                             <div class="video-play-btn">
                                 <a class="popup-video" href="https://player.vimeo.com/video/7449107" target="_blank"
                                     role="button">
@@ -483,7 +486,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-xl-7 wow slideInLeft">
-                        <img src="assets/images/tabbing_img.png" alt="">
+                        <img src="{{ asset('images/tabbing_img.png') }}" alt="">
                     </div>
                     <div class="col-lg-6 col-xl-5 col-sm-12">
                         <div class="section-title text-start mb-4">
@@ -501,7 +504,7 @@
                             <li>Technical Support</li>
                         </ul>
 
-                        <a href="our-services.html" class="btn btn-secondary"><span class="outer-wrap"><span
+                        <a href="{{ url('/services') }}" class="btn btn-secondary"><span class="outer-wrap"><span
                                     data-text="View All Services">View All Services</span></span></a>
                     </div>
 
@@ -558,14 +561,14 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="about-us.html" class="btn btn-outline-light"><span class="outer-wrap"><span
+                        <a href="{{ url('/about') }}" class="btn btn-outline-light"><span class="outer-wrap"><span
                                     data-text="Learn More">Learn More</span></span></a>
                     </div>
                     <div class="stats-img-abstract">
                         &nbsp;
                     </div>
                     <div class="stats-img wow slideInRight">
-                        <img src="assets/images/stats_img.png" class="" alt="">
+                        <img src="{{ asset('images/stats_img.png') }}" class="" alt="">
                     </div>
                 </div>
             </div>
@@ -596,18 +599,18 @@
                         <div class="portfolio-gallery-item">
                             <div class="item-img">
                                 <div class="portfolio-img-gallery">
-                                    <a href="assets/images/portfolio/portfolio_img_1.jpg"
+                                    <a href="{{ asset('images/portfolio/portfolio_img_1.jpg') }}"
                                         class="portfolio-img-gallery" title="E-commerce Platform">
-                                        <img src="assets/images/portfolio/portfolio_img_1.jpg" class="rounded"
-                                            alt="">
+                                        <img src="{{ asset('images/portfolio/portfolio_img_1.jpg') }}"
+                                            class="rounded" alt="">
                                     </a>
                                     <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                 </div>
 
-                                <a href="portfolio-single.html" class="arrow"><i class="srn-arrow-right"></i></a>
+                                <a href="{{ url('/portfolio') }}" class="arrow"><i class="srn-arrow-right"></i></a>
                             </div>
                             <div class="item-content">
-                                <h6><a href="portfolio-single.html">E-commerce Platform</a></h6>
+                                <h6><a href="{{ url('/portfolio') }}">E-commerce Platform</a></h6>
                                 <div class="sub-head">Web Development & E-commerce</div>
                                 <p>Custom-built online marketplace with advanced features including payment integration
                                     and inventory management system</p>
@@ -618,18 +621,18 @@
                         <div class="portfolio-gallery-item">
                             <div class="item-img">
                                 <div class="portfolio-img-gallery">
-                                    <a href="assets/images/portfolio/portfolio_img_2.jpg"
+                                    <a href="{{ asset('images/portfolio/portfolio_img_2.jpg') }}"
                                         class="portfolio-img-gallery" title="Mobile Banking App">
-                                        <img src="assets/images/portfolio/portfolio_img_2.jpg" class="rounded"
-                                            alt="">
+                                        <img src="{{ asset('images/portfolio/portfolio_img_2.jpg') }}"
+                                            class="rounded" alt="">
                                     </a>
                                     <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                 </div>
 
-                                <a href="portfolio-single.html" class="arrow"><i class="srn-arrow-right"></i></a>
+                                <a href="{{ url('/portfolio') }}" class="arrow"><i class="srn-arrow-right"></i></a>
                             </div>
                             <div class="item-content">
-                                <h6><a href="portfolio-single.html">Mobile Banking App</a></h6>
+                                <h6><a href="{{ url('/portfolio') }}">Mobile Banking App</a></h6>
                                 <div class="sub-head">Mobile App Development</div>
                                 <p>Secure and user-friendly mobile banking application with biometric authentication and
                                     real-time transaction processing</p>
@@ -640,18 +643,18 @@
                         <div class="portfolio-gallery-item">
                             <div class="item-img">
                                 <div class="portfolio-img-gallery">
-                                    <a href="assets/images/portfolio/portfolio_img_3.jpg"
+                                    <a href="{{ asset('images/portfolio/portfolio_img_3.jpg') }}"
                                         class="portfolio-img-gallery" title="Enterprise Management System">
-                                        <img src="assets/images/portfolio/portfolio_img_3.jpg" class="rounded"
-                                            alt="">
+                                        <img src="{{ asset('images/portfolio/portfolio_img_3.jpg') }}"
+                                            class="rounded" alt="">
                                     </a>
                                     <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                 </div>
 
-                                <a href="portfolio-single.html" class="arrow"><i class="srn-arrow-right"></i></a>
+                                <a href="{{ url('/portfolio') }}" class="arrow"><i class="srn-arrow-right"></i></a>
                             </div>
                             <div class="item-content">
-                                <h6><a href="portfolio-single.html">Enterprise Management System</a></h6>
+                                <h6><a href="{{ url('/portfolio') }}">Enterprise Management System</a></h6>
                                 <div class="sub-head">Custom Software Development</div>
                                 <p>Comprehensive business management solution with CRM, inventory tracking, and
                                     automated reporting capabilities</p>
@@ -670,7 +673,7 @@
                     <div class="col-xl-7 mx-auto col-lg-8 mb-0">
                         <div class="home-default-faqs-counter-wrap">
                             <div class="text-center">
-                                <img src="assets/images/home-default-faqs.png" alt="">
+                                <img src="{{ asset('images/home-default-faqs.png') }}" alt="">
                             </div>
                             <div class="home-default-faqs-counter">
                                 <div class="hstack gap-3">
@@ -831,7 +834,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="our-pricing.html" class="text-uppercase btn btn-default"><span
+                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-default"><span
                                         class="outer-wrap"><span data-text="Get Started">Get Started</span></span></a>
                             </div>
                         </div>
@@ -867,7 +870,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="our-pricing.html" class="text-uppercase btn btn-outline-light"><span
+                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-outline-light"><span
                                         class="outer-wrap"><span data-text="Get Started">Get Started</span></span></a>
                             </div>
                         </div>
@@ -899,7 +902,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="our-pricing.html" class="text-uppercase btn btn-default"><span
+                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-default"><span
                                         class="outer-wrap"><span data-text="Get Started">Get Started</span></span></a>
                             </div>
                         </div>
@@ -930,7 +933,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="our-pricing.html" class="text-uppercase btn btn-default"><span
+                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-default"><span
                                         class="outer-wrap"><span data-text="Contact Us">Contact Us</span></span></a>
                             </div>
                         </div>
@@ -974,7 +977,7 @@
                                     detail were exceptional throughout the entire development process.</p>
                                 <div class="testimonial-box">
                                     <div class="thumb-img">
-                                        <img src="assets/images/thumb_1.jpg" alt="">
+                                        <img src="{{ asset('images/thumb_1.jpg') }}" alt="">
                                     </div>
                                     <div class="content">
                                         <h6 class="name">John Anderson</h6>
@@ -1003,7 +1006,7 @@
                                     the project on time and within budget.</p>
                                 <div class="testimonial-box">
                                     <div class="thumb-img">
-                                        <img src="assets/images/thumb_2.jpg" alt="">
+                                        <img src="{{ asset('images/thumb_2.jpg') }}" alt="">
                                     </div>
                                     <div class="content">
                                         <h6 class="name">Maria Rodriguez</h6>
@@ -1032,7 +1035,7 @@
                                     improved our customer service significantly.</p>
                                 <div class="testimonial-box">
                                     <div class="thumb-img">
-                                        <img src="assets/images/thumb_3.jpg" alt="">
+                                        <img src="{{ asset('images/thumb_3.jpg') }}" alt="">
                                     </div>
                                     <div class="content">
                                         <h6 class="name">Sarah Thompson</h6>
@@ -1061,7 +1064,7 @@
                                     excellence is truly impressive.</p>
                                 <div class="testimonial-box">
                                     <div class="thumb-img">
-                                        <img src="assets/images/thumb_4.jpg" alt="">
+                                        <img src="{{ asset('images/thumb_4.jpg') }}" alt="">
                                     </div>
                                     <div class="content">
                                         <h6 class="name">Michael Chen</h6>
@@ -1090,8 +1093,9 @@
                 <div class="row">
                     <div class="col-xl-5 col-lg-6">
                         <div class="home-services-imgs">
-                            <img src="assets/images/home-default-img-1.png" alt="">
-                            <img src="assets/images/home-default-img-2.png" class="off-pattern" alt="">
+                            <img src="{{ asset('images/home-default-img-1.png') }}" alt="">
+                            <img src="{{ asset('images/home-default-img-2.png') }}" class="off-pattern"
+                                alt="">
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-6 text-start">
@@ -1107,7 +1111,7 @@
                             <a href="javascript:" class="btn btn-primary" data-trigger="#signup"><span
                                     class="outer-wrap"><span data-text="Get Free Quote">Get Free
                                         Quote</span></span></a>
-                            <a href="contact.html" class="btn btn-secondary"><span class="outer-wrap"><span
+                            <a href="{{ url('/contact') }}" class="btn btn-secondary"><span class="outer-wrap"><span
                                         data-text="Contact Us">Contact Us</span></span></a>
                         </div>
                     </div>
@@ -1128,8 +1132,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-4">
                     <div class="logo-footer">
-                        <a href="index.php">
-                            <img src="assets/images/logo_light.svg" alt="">
+                        <a href="{{ url('/') }}">
+                            <img src="{{ asset('images/logo_light.svg') }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -1309,11 +1313,11 @@
 
     <!-- Jquery Library JS -->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery-min.js"></script>
+    <script src="{{ asset('js/jquery-min.js') }}"></script>
     <!-- Theme Plugin -->
-    <script src="assets/js/theme-plugins.min.js"></script>
+    <script src="{{ asset('js/theme-plugins.min.js') }}"></script>
     <!-- Theme Custom -->
-    <script src="assets/js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"version":"2024.11.0","token":"64224fc8786846928480d180dfc466bd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
