@@ -16,7 +16,7 @@
         content="Serenite, themeforest template, app, app landing page, App Showcase, cryptocurrency, digital studio, saas, saas landing, saas theme, software, software company website, software startup, startup, startup landing page, startup wordpress, technology">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -24,9 +24,9 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&amp;display=swap"
         rel="stylesheet">
     <!-- Plugin Style CSSS -->
-    <link rel="stylesheet" href="../../assets/css/theme-plugins.min.css">
+    <link rel="stylesheet" href="{{ asset('css/theme-plugins.min.css')}}">
     <!-- Main Template CSS -->
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
     <!-- Page loader Start -->
     <div id="pageloader">
         <div class="loader-item">
-            <img src="../../assets/images/tail-spin.svg" width="80" alt="">
+            <img src="{{ asset('images/tail-spin.svg') }}" width="80" alt="">
         </div>
     </div>
     <!-- Page loader End -->
@@ -64,7 +64,7 @@
             </div>
             <nav class="navbar navbar-expand-lg header-anim">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"><img src="../../assets/images/logo_light.svg"
+                    <a class="navbar-brand" href="index.html"><img src="{{ asset('images/logo_light.svg') }}"
                             alt=""></a>
 
                     <form class="d-flex order-lg-last ms-3 align-items-center">
@@ -87,7 +87,7 @@
 
                     <div class="navbar-collapse offcanvas offcanvas-start offcanvas-collapse" id="navbarCollapse">
                         <div class="offcanvas-header">
-                            <a class="navbar-brand" href="index.php"><img src="assets/images/logo_dark.svg"
+                            <a class="navbar-brand" href="index.php"><img src="{{ asset('images/logo_dark.svg') }}" 
                                     alt=""></a>
                             <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
@@ -314,21 +314,21 @@
                         <div class="tab-content order-md-first" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <img src="../../assets/images/tabbing_img.png" alt="">
+                                <img src="{{ asset('images/tabbing_img.png') }}" alt="">
                                 <p class="txt-dark text-center">Latest projects delivered from <strong
                                         class="txt-secondary">2023</strong> to <strong
                                         class="txt-secondary">2025</strong> </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
-                                <img src="../../assets/images/tabbing_img.png" alt="">
+                                <img src="{{ asset('images/tabbing_img.png') }}" alt="">
                                 <p class="txt-dark text-center">Mobile solutions delivered from <strong
                                         class="txt-secondary">2023</strong> to <strong
                                         class="txt-secondary">2025</strong> </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab">
-                                <img src="../../assets/images/tabbing_img.png" alt="">
+                                <img src="{{ asset('images/tabbing_img.png') }}" alt="">
                                 <p class="txt-dark text-center">Enterprise projects completed from <strong
                                         class="txt-secondary">2023</strong> to <strong
                                         class="txt-secondary">2025</strong> </p>
@@ -395,7 +395,7 @@
                         &nbsp;
                     </div>
                     <div class="stats-img wow slideInRight">
-                        <img src="../../assets/images/stats_img.png" class="" alt="">
+                        <img src="{{ asset('images/stats_img.png') }}" class="" alt="">
                     </div>
                 </div>
             </div>
@@ -594,9 +594,9 @@
                         <div class="portfolio-gallery-item">
                             <div class="item-img">
                                 <div class="portfolio-img-gallery">
-                                    <a href="../../assets/images/portfolio/portfolio_img_1.jpg"
+                                    <a href="{{ asset('images/portfolio/portfolio_img_1.jpg') }}"
                                         class="portfolio-img-gallery" title="E-commerce Platform">
-                                        <img src="../../assets/images/portfolio/portfolio_img_1.jpg" class="rounded"
+                                        <img src="{{ asset('images/portfolio/portfolio_img_1.jpg') }}" class="rounded"
                                             alt="">
                                     </a>
                                     <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -616,9 +616,9 @@
                         <div class="portfolio-gallery-item">
                             <div class="item-img">
                                 <div class="portfolio-img-gallery">
-                                    <a href="../../assets/images/portfolio/portfolio_img_2.jpg"
+                                    <a href="{{ asset('images/portfolio/portfolio_img_2.jpg') }}"
                                         class="portfolio-img-gallery" title="Mobile Banking App">
-                                        <img src="../../assets/images/portfolio/portfolio_img_2.jpg" class="rounded"
+                                        <img src="{{ asset('images/portfolio/portfolio_img_2.jpg') }}" class="rounded"
                                             alt="">
                                     </a>
                                     <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -638,9 +638,9 @@
                         <div class="portfolio-gallery-item">
                             <div class="item-img">
                                 <div class="portfolio-img-gallery">
-                                    <a href="../../assets/images/portfolio/portfolio_img_3.jpg"
+                                    <a href="{{ asset('images/portfolio/portfolio_img_3.jpg') }}"
                                         class="portfolio-img-gallery" title="Enterprise Management System">
-                                        <img src="../../assets/images/portfolio/portfolio_img_3.jpg" class="rounded"
+                                        <img src="{{ asset('images/portfolio/portfolio_img_3.jpg') }}" class="rounded"
                                             alt="">
                                     </a>
                                     <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -788,7 +788,7 @@
             <div class="container pos-rel">
                 <div class="row align-items-center">
                     <div class="col-lg-5 pos-rel offset-lg-2 offset-md-4 col-md-8 mb-0">
-                        <img src="../../assets/images/img-faqs.png" class="faqs-imgs" alt="">
+                        <img src="{{ asset('images/img-faqs.png') }}" class="faqs-imgs" alt="">
                         <div class="section-title text-start">
                             <span>Frequently Asked Questions</span>
                             <h2 class="wow">Everything you need to <strong>know about our services</strong></h2>
@@ -911,7 +911,7 @@
                     <div class="item">
                         <div class="testimonial-shadow">
                             <div class="thumb-img">
-                                <img src="../../assets/images/thumb_1.jpg" alt="">
+                                <img src="{{ asset('images/thumb_1.jpg') }}" alt="">
                             </div>
                             <h6 class="name">John Anderson</h6>
                             <div class="post">CEO, TechVenture Solutions</div>
@@ -932,7 +932,7 @@
                     <div class="item">
                         <div class="testimonial-shadow">
                             <div class="thumb-img">
-                                <img src="../../assets/images/thumb_2.jpg" alt="">
+                                <img src="{{ asset('images/thumb_2.jpg') }}" alt="">
                             </div>
                             <h6 class="name">Maria Rodriguez</h6>
                             <div class="post">Operations Manager, Digital Health</div>
@@ -953,7 +953,7 @@
                     <div class="item">
                         <div class="testimonial-shadow">
                             <div class="thumb-img">
-                                <img src="../../assets/images/thumb_3.jpg" alt="">
+                                <img src="{{ asset('images/thumb_3.jpg') }}" alt="">
                             </div>
                             <h6 class="name">Sarah Thompson</h6>
                             <div class="post">Director, GlobalTrade Corp</div>
@@ -974,7 +974,7 @@
                     <div class="item">
                         <div class="testimonial-shadow">
                             <div class="thumb-img">
-                                <img src="../../assets/images/thumb_4.jpg" alt="">
+                                <img src="{{ asset('images/thumb_4.jpg') }}" alt="">
                             </div>
                             <h6 class="name">Michael Chen</h6>
                             <div class="post">CTO, InnovateTech Ltd</div>
@@ -995,7 +995,7 @@
                     <div class="item">
                         <div class="testimonial-shadow">
                             <div class="thumb-img">
-                                <img src="../../assets/images/thumb_5.jpg" alt="">
+                                <img src="{{ asset('images/thumb_5.jpg') }}" alt="">
                             </div>
                             <h6 class="name">David Wilson</h6>
                             <div class="post">Founder, StartupHub</div>
@@ -1017,7 +1017,7 @@
                     <div class="item">
                         <div class="testimonial-shadow">
                             <div class="thumb-img">
-                                <img src="../../assets/images/thumb_6.jpg" alt="">
+                                <img src="{{ asset('images/thumb_6.jpg') }}" alt="">
                             </div>
                             <h6 class="name">Lisa Park</h6>
                             <div class="post">Director, FinanceFlow Systems</div>
@@ -1090,7 +1090,7 @@
                                 <div class="footer-widget">
                                     <div class="logo-footer">
                                         <a href="index.html">
-                                            <img src="../../assets/images/logo_dark.svg" alt="">
+                                            <img src="{{ asset('images/logo_dark.svg') }}" alt="">
                                         </a>
                                     </div>
 
@@ -1230,11 +1230,11 @@
 
     <!-- Jquery Library JS -->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="../../assets/js/jquery-min.js"></script>
+    <script src="{{ asset('js/jquery-min.js') }}"></script>
     <!-- Theme Plugin -->
-    <script src="../../assets/js/theme-plugins.min.js"></script>
+    <script src="{{ asset('js/theme-plugins.min.js') }}"></script>
     <!-- Theme Custom -->
-    <script src="../../assets/js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"version":"2024.11.0","token":"64224fc8786846928480d180dfc466bd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
