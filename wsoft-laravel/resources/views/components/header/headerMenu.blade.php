@@ -42,23 +42,11 @@
              </ul>
          </li>
          <li class="nav-item dropdown">
-             <a class="nav-link" href="{{ url('/faqs') }}" aria-expanded="false">FAQs</a>
-             <!-- <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ url('/portfolio') }}">Portfolio 2 Column</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-3col.html">Portfolio 3 Column</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-4col.html">Portfolio 4 Column</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a></li>
-                                </ul> -->
+             <a class="nav-link" href="{{ url('/faq') }}" aria-expanded="false">FAQs</a>
          </li>
          <li class="nav-item dropdown">
              <a class="nav-link" href="{{ url('/contact') }}" aria-expanded="false">Contact
                  Us</a>
-             <!-- <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ url('/portfolio') }}">Portfolio 2 Column</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-3col.html">Portfolio 3 Column</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-4col.html">Portfolio 4 Column</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a></li>
-                                </ul> -->
          </li>
          <li class="nav-item dropdown">
              <a class="nav-link" href="{{ url('/coming-soon') }}" aria-expanded="false">Coming Soon</a>

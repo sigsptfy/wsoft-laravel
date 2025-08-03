@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServiceController;
@@ -19,5 +20,6 @@ Route::get('/services', [ServiceController::class, 'index'])->name('services.ser
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.portfolio');
 Route::prefix('about')->group(function () {
     Route::get('/', [AboutController::class, 'about'])->name('about.aboutUs');
-    Route::get('/team', [AboutController::class, 'team'])->name('about.ourTeam');
+    Route::get('/team', [AboutController::class, 'team'])->name('about.team');
 });
+Route::get('/faq', [FaqController::class, 'index'])->name('faqs.faq');
