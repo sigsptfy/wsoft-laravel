@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioController;
@@ -23,3 +24,4 @@ Route::prefix('about')->group(function () {
     Route::get('/team', [AboutController::class, 'team'])->name('about.team');
 });
 Route::get('/faq', [FaqController::class, 'index'])->name('faqs.faq');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.contactUs');
