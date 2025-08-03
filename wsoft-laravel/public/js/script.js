@@ -1,9 +1,9 @@
-/* ==================== 
-Table of Content 
-==================== 
+/* ====================
+Table of Content
+====================
 
 1. Loader Animation
-2. Featured Countdown 
+2. Featured Countdown
 3. Select Dropdown Globally
 4. Donation Select
 5. Select Light
@@ -104,13 +104,13 @@ Table of Content
     $(window).on('load, resize, scroll', function() {
         var headerHeight = $('header').height();
         $('header').css('height', headerHeight);
-    
+
     });
 
     /* On Scroll Text Effect */
-	if ($('.section-title h2, .title h1').length) {		
+	if ($('.section-title h2, .title h1').length) {
 		let	animatedTextElements = document.querySelectorAll('.section-title h2, .title h1');
-		
+
 		 animatedTextElements.forEach((element) => {
 			//Reset if needed
 			if (element.animation) {
@@ -139,20 +139,20 @@ Table of Content
 				ease: Back.easeOut,
 				stagger: 0.02,
 			});
-		});		
+		});
 	}
 
      // Loader Animation
      $(window).on("load",function () {
-        $("#pageloader").delay(1200).fadeOut("slow");
-        $(".loader-item").delay(700).fadeOut();
+        $("#pageloader").delay(100).fadeOut("slow");
+        $(".loader-item").delay(100).fadeOut();
     });
 
     // Splitting();
     // Splitting({ target: $('.section-title h2, .marketing-banner h1'), by: 'lines' });
 
     var custom_js = {
-        
+
         bootstrap_menu: function () {
             if ($('.dropdown-menu a.dropdown-submenu-toggle').length) {
 
@@ -202,7 +202,7 @@ Table of Content
                     minimumResultsForSearch: -1
                 });
             }
-        }, 
+        },
 
         select_light_bordered: function () {
             if ($('.select-light-bordered').length) {
@@ -279,13 +279,13 @@ Table of Content
                     $("html, body").animate({
                         scrollTop: 0
                     }, 600);
-                    return false;       
+                    return false;
                 });
             }
         },
 
         tooltip_globally: function () {
-            if ($('[data-bs-toggle="tooltip"]').length) {                
+            if ($('[data-bs-toggle="tooltip"]').length) {
                 $('[data-bs-toggle="tooltip"]').tooltip();
             }
         },
@@ -382,13 +382,13 @@ Table of Content
                         type: 'image',
                         gallery: {
                             enabled: true, // set to true to enable gallery
-                        
+
                             preload: [0,2], // read about this option in next Lazy-loading section
-                        
+
                             navigateByImgClick: true,
-                        
+
                             arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
-                        
+
                             tPrev: 'Previous (Left arrow key)', // title for left button
                             tNext: 'Next (Right arrow key)', // title for right button
                             tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
@@ -398,8 +398,8 @@ Table of Content
             }
         },
 
-       
-        // Animated Skill Bars  
+
+        // Animated Skill Bars
         animated_skillbar: function () {
             if ($('.skillbar').length) {
 
@@ -430,9 +430,9 @@ Table of Content
         slider_testimonials_shadow : function(){
 
             if( $('#testimonials-slider-shadow').length ){
-    
+
                 $('#testimonials-slider-shadow').owlCarousel({
-    
+
                     loop: true,
                     margin: 0,
                     autoplay: true,
@@ -465,8 +465,8 @@ Table of Content
         slider_portfolio_single : function(){
 
             if( $('#portfolio-slider-single').length ){
-    
-                $('#portfolio-slider-single').owlCarousel({    
+
+                $('#portfolio-slider-single').owlCarousel({
                     loop: true,
                     margin: 0,
                     autoplay: true,
@@ -485,8 +485,8 @@ Table of Content
         portfolio_related_slider : function(){
 
             if( $('#portfolio-related-slider').length ){
-    
-                $('#portfolio-related-slider').owlCarousel({    
+
+                $('#portfolio-related-slider').owlCarousel({
                     loop: true,
                     margin: 30,
                     autoplay: true,
@@ -516,8 +516,8 @@ Table of Content
         services_related_slider : function(){
 
             if( $('#services-related-slider').length ){
-    
-                $('#services-related-slider').owlCarousel({    
+
+                $('#services-related-slider').owlCarousel({
                     loop: true,
                     margin: 30,
                     autoplay: true,
@@ -550,8 +550,8 @@ Table of Content
         marketing_banner_slider : function(){
 
             if( $('#marketing-banner-slider').length ){
-    
-                $('#marketing-banner-slider').owlCarousel({    
+
+                $('#marketing-banner-slider').owlCarousel({
                     loop: true,
                     margin: 0,
                     autoplay: true,
@@ -587,9 +587,9 @@ Table of Content
         slider_testimonials_leftimg : function(){
 
             if( $('#testimonials-slider-leftimg').length ){
-    
+
                 $('#testimonials-slider-leftimg').owlCarousel({
-    
+
                     loop: true,
                     margin: 30,
                     autoplay: false,
@@ -609,9 +609,9 @@ Table of Content
         slider_testimonials_single : function(){
 
             if( $('#testimonials-slider-single').length ){
-    
+
                 $('#testimonials-slider-single').owlCarousel({
-    
+
                     loop: true,
                     margin: 30,
                     autoplay: true,
@@ -631,9 +631,9 @@ Table of Content
         slider_blog_post : function(){
 
             if( $('#blog-post').length ){
-    
+
                 $('#blog-post').owlCarousel({
-    
+
                     loop: true,
                     margin: 0,
                     autoplay: false,
@@ -653,9 +653,9 @@ Table of Content
         client_default_home_slider : function(){
 
             if( $('#client-home-default').length ){
-    
+
                 $('#client-home-default').owlCarousel({
-    
+
                     loop: true,
                     margin: 0,
                     autoplay: true,
@@ -688,9 +688,9 @@ Table of Content
         home_default_testimonials : function(){
 
             if( $('#home-default-testimonials').length ){
-    
+
                 $('#home-default-testimonials').owlCarousel({
-    
+
                     loop: true,
                     margin: 30,
                     autoplay: false,
@@ -720,9 +720,9 @@ Table of Content
         home_coworking_banner : function(){
 
             if( $('#home-coworking-banner').length ){
-    
+
                 $('#home-coworking-banner').owlCarousel({
-    
+
                     loop: true,
                     margin: 0,
                     autoplay: false,
@@ -741,9 +741,9 @@ Table of Content
         home_space_solutions : function(){
 
             if( $('#coworking-space-solutions').length ){
-    
+
                 $('#coworking-space-solutions').owlCarousel({
-    
+
                     loop: true,
                     margin: 0,
                     autoplay: false,
@@ -773,7 +773,7 @@ Table of Content
                 });
             }
         },
-        
+
         // All Owl Carousel Slider
 
 
