@@ -426,7 +426,8 @@
 
 
     <!-- Jquery Library JS -->
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script data-cfasync="false" src="{{ asset('cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}">
+    </script>
     <script src="{{ asset('js/jquery-min.js') }}"></script>
     <!-- Theme Plugin -->
     <script src="{{ asset('js/theme-plugins.min.js') }}"></script>

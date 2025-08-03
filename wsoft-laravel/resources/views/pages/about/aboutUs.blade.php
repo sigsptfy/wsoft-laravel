@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from mannatstudio.com/html/serenite/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jul 2025 13:57:13 GMT -->
+<!-- Mirrored from mannatstudio.com/html/serenite/our-services.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jul 2025 13:57:36 GMT -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Serenite &#8211; Saas Software Landing & Startup Agency Template</title>
+    <title>Wsoft &#8211; Fullstack Software Solutions & Development Services</title>
 
     <meta name="author" content="Mannat Studio">
     <meta name="description"
@@ -56,7 +56,7 @@
                                 <a href="#">Products</a>
                                 <a href="#">Careers</a>
                                 <a href="#">Support</a>
-                                <a href="#">Login</a>
+                                <!-- <a href="#">Login</a> -->
                             </div>
                         </div>
                     </div>
@@ -71,11 +71,10 @@
                         <a href="#" id="search_home">
                             <i class="srn-search"></i>
                         </a>
-                        {{-- <a class="signup-btn btn btn-outline-light text-nowrap" data-trigger="#signup">
-                            <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span
-                                        data-text="Sing Up">Sing Up</span></span></span>
-                            <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
-                        </a> --}}
+                        <!-- <a class="signup-btn btn btn-outline-light text-nowrap" data-trigger="#signup">
+                        <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
+                        <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
+                    </a> -->
                         <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -86,8 +85,20 @@
                     </form>
 
 
-                    {{-- import headerMenu --}}
-                    @include('components.header.headerMenu')
+                    <div class="navbar-collapse offcanvas offcanvas-start offcanvas-collapse" id="navbarCollapse">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="index.php"><img src="{{ asset('images/logo_dark.svg') }}"
+                                    alt=""></a>
+                            <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                        {{-- import headerMenu Start --}}
+                        @include('components.header.headerMenu')
+                        {{-- import headerMenu End --}}
+                    </div>
                 </div>
             </nav>
         </header>
@@ -233,7 +244,6 @@
             </div>
         </section>
 
-
         <section class="section-spacing p-0">
             <div class="container">
                 <div class="row">
@@ -251,7 +261,8 @@
                                         <img src="{{ asset('images/portfolio/slider_single_1.jpg') }}" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="{{ asset('images/portfolio/slider_single_3.jpg') }}" alt="">
+                                        <img src="{{ asset('images/portfolio/slider_single_3.jpg') }}"
+                                            alt="">
                                     </div>
                                 </div>
                             </div>
@@ -314,7 +325,6 @@
                 </div>
             </div>
         </section>
-
         <!-- About Us -->
 
         <!-- Why Choose Us -->
@@ -693,6 +703,6 @@
         crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from mannatstudio.com/html/serenite/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jul 2025 13:57:35 GMT -->
+<!-- Mirrored from mannatstudio.com/html/serenite/our-services.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jul 2025 13:57:36 GMT -->
 
 </html>
