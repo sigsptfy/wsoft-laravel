@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Wsoft &#8211; Fullstack Software Solutions & Development Services</title>
+    <title>@yield('title')</title>
 
     <meta name="author" content="Mannat Studio">
     <meta name="description"
@@ -28,8 +28,8 @@
     <!-- Main Template CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-     <!-- Page Specific CSS -->
-     @yield('page-css')
+    <!-- Page Specific CSS -->
+    @yield('page-css')
 
 </head>
 
@@ -43,9 +43,9 @@
     </div>
     <!-- Page loader End -->
 
-
+    <!-- Main Start -->
     @yield('content')
-
+    <!-- Main End -->
 
     <!-- Jquery Library JS -->
     <script data-cfasync="false" src="{{ asset('cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}">

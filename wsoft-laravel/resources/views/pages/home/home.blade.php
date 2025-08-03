@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Home - Wsoft Fullstack Software Solutions & Development Services')
 
 @section('page-css')
     <!-- Home Default CSS -->
