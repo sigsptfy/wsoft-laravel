@@ -37,9 +37,9 @@
                             <i class="srn-search"></i>
                         </a>
                         <!-- <a class="signup-btn btn btn-outline-light text-nowrap" data-trigger="#signup">
-                                    <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
-                                    <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
-                                </a> -->
+                                        <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
+                                        <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
+                                    </a> -->
                         <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                             aria-label="Toggle navigation">
