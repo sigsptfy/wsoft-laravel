@@ -144,8 +144,8 @@ Table of Content
 
      // Loader Animation
      $(window).on("load",function () {
-        $("#pageloader").delay(100).fadeOut("slow");
-        $(".loader-item").delay(100).fadeOut();
+        $("#pageloader").delay(500).fadeOut("slow");
+        $(".loader-item").delay(700).fadeOut();
     });
 
     // Splitting();

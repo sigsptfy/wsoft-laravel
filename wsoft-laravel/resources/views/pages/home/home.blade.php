@@ -421,7 +421,7 @@
                                     <i class="bi bi-check2"></i>
                                 </div>
                                 <div class="text-space fun-fact">
-                                    <h2><span class="timer" data-to="25" data-speed="2000">25</span>+</h2>
+                                    <h2><span class="timer" data-to="150" data-speed="2000">150</span>+</h2>
                                     <div>Projects completed</div>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i>
@@ -551,7 +551,7 @@
                                 <div class="hstack gap-3">
                                     <div class="counter-text fun-fact">
                                         <h2>
-                                            <span class="timer" data-to="25" data-speed="2000">25</span><sub>+</sub>
+                                            <span class="timer" data-to="150" data-speed="2000">150</span><sub>+</sub>
                                         </h2>
                                         <div class="text">
                                             Projects completed successfully
@@ -1002,7 +1002,7 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="logo-footer">
                         <a href="{{ url('/') }}">
-                            <img src="{{ asset('images/logo_light.svg') }}" alt="">
+                            <img src="{{ asset('images/logo_light1.svg') }}" alt="">
                         </a>
                     </div>
                 </div>

@@ -216,7 +216,7 @@
 
 
         <!-- Our Stats -->
-        <section class="txt-white section-padding pattern_abstract_bg pos-rel section-spacing">
+        {{-- <section class="txt-white section-padding pattern_abstract_bg pos-rel section-spacing">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-7 mb-0">
@@ -273,7 +273,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- Our Stats -->
 
         <!-- Services Section -->
@@ -432,7 +432,7 @@
                         </div>
                     </div>
                     <div class="partner-text arrow-read-more text-center fun-fact">
-                        <p>Over <span><small class="timer" data-to="25" data-speed="2000">25</small>+
+                        <p>Over <span><small class="timer" data-to="150" data-speed="2000">150</small>+
                                 Projects</span> delivered successfully</p>
                         <a href="contact.html" class="btn-link-secondary">Start Your Project <i
                                 class="srn-arrow-right"></i></a>
@@ -536,7 +536,7 @@
         <!-- Our Case Studies -->
 
         <!-- Pricing Plan 3 Columnn -->
-        <section class="pricing-bg section-spacing section-padding pt-0">
+        {{-- <section class="pricing-bg section-spacing section-padding pt-0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-lg-5 mx-auto text-center">
@@ -654,7 +654,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- Pricing Plan 3 Columnn -->
 
         <!-- Get Your Answers -->
@@ -770,7 +770,7 @@
         <!-- Get Your Answers -->
 
         <!-- Real User Reviews -->
-        <section class="section-spacing">
+        {{-- <section class="section-spacing">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-lg-5 mx-auto text-center">
@@ -912,7 +912,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- Real User Reviews -->
 
         <!-- Our services Content -->
