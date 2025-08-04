@@ -791,40 +791,40 @@ Table of Content
             wow.init();
         },
 
-        // contact_form_validate: function () {
-        //     $("#contactusForm").validate({
-        //         submitHandler: function (form) {
+        contact_form_validate: function () {
+            $("#contactusForm").validate({
+                submitHandler: function (form) {
 
-        //             var s_name = $("#First_Name").val();
-        //             var s_lastname = $("#Last_Name").val();
-        //             var s_email = $("#Email_Address").val();
-        //             var s_phone = $("#Phone_Number").val();
-        //             var s_comment = $("#Your_Message").val();
+                    var s_name = $("#First_Name").val();
+                    var s_lastname = $("#Last_Name").val();
+                    var s_email = $("#Email_Address").val();
+                    var s_phone = $("#Phone_Number").val();
+                    var s_comment = $("#Your_Message").val();
 
-        //             $.post("{{ route('contact.submit') }}", {
-        //                 name: s_name,
-        //                 lastname: s_lastname,
-        //                 email: s_email,
-        //                 phone: s_phone,
-        //                 comment: s_comment
-        //             },
-        //                 function (result) {
-        //                     // Clear previous message
-        //                     $('#sucessmessage').empty();
+                    $.post("{{ route('contact.submit') }}", {
+                        name: s_name,
+                        lastname: s_lastname,
+                        email: s_email,
+                        phone: s_phone,
+                        comment: s_comment
+                    },
+                        function (result) {
+                            // Clear previous message
+                            $('#sucessmessage').empty();
 
-        //                     // Check result contains "success" or some indicator (customize as needed)
-        //                     if (result.includes("success")) {
-        //                         $('#sucessmessage').append("<div class='alert alert-success'>Message sent successfully!</div>");
-        //                         form.reset(); // Clear form
-        //                     } else {
-        //                         $('#sucessmessage').append("<div class='alert alert-danger'>Sorry, something went wrong. Please try again.</div>");
-        //                     }
-        //                 });
+                            // Check result contains "success" or some indicator (customize as needed)
+                            if (result.includes("success")) {
+                                $('#sucessmessage').append("<div class='alert alert-success'>Message sent successfully!</div>");
+                                form.reset(); // Clear form
+                            } else {
+                                $('#sucessmessage').append("<div class='alert alert-danger'>Sorry, something went wrong. Please try again.</div>");
+                            }
+                        });
 
-        //             return false; // Prevent default form submission
-        //         },
-        //     });
-        // },
+                    return false; // Prevent default form submission
+                },
+            });
+        },
 
         initializ: function () {
 

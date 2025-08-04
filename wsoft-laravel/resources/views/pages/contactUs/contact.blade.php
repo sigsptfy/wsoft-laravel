@@ -4,46 +4,71 @@
 
 @section('page-js')
     <script>
-        $(document).ready(function() {
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("contactusForm");
+
+            if (!form) return;
+
+            const actionUrl = form.getAttribute("action");
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute("content");
+
             $("#contactusForm").validate({
                 rules: {
-                    First_Name: {
-                        required: true
-                    },
-                    Last_Name: {
-                        required: true
-                    },
+                    First_Name: "required",
+                    Last_Name: "required",
                     Email_Address: {
                         required: true,
                         email: true
                     },
-                    Phone_Number: {
-                        required: true
-                    },
-                    Your_Message: {
-                        required: true
-                    }
+                    Phone_Number: "required",
+                    Your_Message: "required"
                 },
                 messages: {
                     First_Name: "Please enter your First Name",
                     Last_Name: "Please enter your Last Name",
-                    Email_Address: {
-                        required: "Please enter your Email",
-                        email: "Please enter a valid Email"
-                    },
+                    Email_Address: "Please enter a valid Email",
                     Phone_Number: "Please enter your Phone Number",
                     Your_Message: "Please enter your Message"
                 },
-                errorElement: "div",
-                errorPlacement: function(error, element) {
-                    error.addClass("text-danger mt-1");
-                    element.closest(".col-md-6, .col-md-12").append(error);
-                },
-                highlight: function(element) {
-                    $(element).addClass("is-invalid");
-                },
-                unhighlight: function(element) {
-                    $(element).removeClass("is-invalid");
+                submitHandler: function() {
+                    const formData = {
+                        _token: csrfToken,
+                        First_Name: $("#First_Name").val(),
+                        Last_Name: $("#Last_Name").val(),
+                        Email_Address: $("#Email_Address").val(),
+                        Phone_Number: $("#Phone_Number").val(),
+                        Your_Message: $("#Your_Message").val(),
+                        Combo_Box: $("select[name='Combo_Box']").val() 
+                    };
+
+                    $.ajax({
+                        type: "POST",
+                        url: actionUrl,
+                        data: formData,
+                        dataType: "json",
+                        success: function(response) {
+                            $('#sucessmessage').empty();
+
+                            if (response.status === "success") {
+                                $('#sucessmessage').html(
+                                    "<div class='alert alert-success'>Message sent successfully!</div>"
+                                    );
+                                form.reset();
+                            } else {
+                                const msg = response.message ||
+                                    "Sorry, something went wrong. Please try again.";
+                                $('#sucessmessage').html(
+                                    "<div class='alert alert-danger'>" + msg + "</div>");
+                            }
+                        },
+                        error: function() {
+                            $('#sucessmessage').html(
+                                "<div class='alert alert-danger'>Server error. Please try again later.</div>"
+                                );
+                        }
+                    });
+
+                    return false;
                 }
             });
         });
@@ -85,9 +110,9 @@
                             <i class="srn-search"></i>
                         </a>
                         <!-- <a class="signup-btn btn btn-outline-light text-nowrap" data-trigger="#signup">
-                                                    <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
-                                                    <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
-                                                </a> -->
+                                                        <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
+                                                        <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
+                                                    </a> -->
                         <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                             aria-label="Toggle navigation">

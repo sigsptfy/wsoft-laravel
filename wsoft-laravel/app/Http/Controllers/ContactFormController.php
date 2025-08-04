@@ -11,13 +11,16 @@ class ContactFormController extends Controller
     {
         $data = $request->all();
 
-        Mail::send('emails.contact', ['data' => $data], function ($message) {
-            $message->to('support@wsoftglobal.com')
+        try {
+            Mail::send('emails.contact', ['data' => $data], function ($message) {
+                $message->to('support@wsoftglobal.com')
                     ->from('shalakaindunil137@gmail.com')
                     ->subject('New Contact Form Submission');
-        });
+            });
 
-        return redirect()->back()->with('success', 'Message sent successfully!');
+            return response()->json(['status' => 'success']);
+        } catch (\Exception $e) {
+            return response()->json(['status' => 'error', 'message' => $e->getMessage()]);
+        }
     }
-
 }
