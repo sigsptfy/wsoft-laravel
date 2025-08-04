@@ -54,11 +54,11 @@
                                          </li>
                                          <li>
                                              <div><i class="bi bi-phone"></i></div>
-                                             <div><a href="tel:+94112345678">(+94) 11 234 5678</a></div>
+                                             <div><a href="tel:+94760759204">(+94) 76 075 9204</a></div>
                                          </li>
                                          <li>
                                              <div><i class="bi bi-envelope"></i></div>
-                                             <div><a href="mailto:info@wsoft.lk">info@wsoft.lk</a></div>
+                                             <div><a href="mailto:support@wsoftglobal.com">support@wsoftglobal.com</a></div>
                                          </li>
                                      </ul>
                                  </div>
