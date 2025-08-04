@@ -72,7 +72,7 @@
 
         <b class="screen-overlay"></b>
         <!--  Signup Form Start -->
-        <article class="mobile-offcanvas offcanvas-right" id="signup">
+        {{-- <article class="mobile-offcanvas offcanvas-right" id="signup">
             <button class="btn-close"> <i class="bi bi-x"></i> </button>
             <div class="popup-wrapper" data-lenis-prevent>
 
@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </article> --}}
         <!--  Signup Form Start -->
 
         <!--  Page Breadcrumbs Start -->
@@ -757,10 +757,10 @@
                         <h3>Ready to transform your business with custom software solutions? Let us help you build your
                             next project</h3>
                         <div class="btn-set">
-                            <a href="javascript:" class="btn btn-secondary" data-trigger="#signup"><span
+                            <a href="javascript:" class="btn btn-secondary" data-trigger="#"><span
                                     class="outer-wrap"><span data-text="Get A Free Quote">Get A Free
                                         Quote</span></span></a>
-                            <a href="contact.html" class="btn btn-default"><span class="outer-wrap"><span
+                            <a href="{{ url('contact') }}" class="btn btn-default"><span class="outer-wrap"><span
                                         data-text="Contact Us">Contact Us</span></span></a>
                         </div>
                     </div>
