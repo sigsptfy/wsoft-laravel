@@ -173,7 +173,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_1.jpg"
                                                 class="portfolio-img-gallery" title="E-commerce Platform">
-                                                <img src="assets/images/portfolio/portfolio_img_1.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_1.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -197,7 +197,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_2.jpg"
                                                 class="portfolio-img-gallery" title="Business Management System">
-                                                <img src="assets/images/portfolio/portfolio_img_2.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_2.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -220,7 +220,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_3.jpg"
                                                 class="portfolio-img-gallery" title="Mobile Banking App">
-                                                <img src="assets/images/portfolio/portfolio_img_3.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_3.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -243,7 +243,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_4.jpg"
                                                 class="portfolio-img-gallery" title="Restaurant Management Portal">
-                                                <img src="assets/images/portfolio/portfolio_img_4.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_4.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -266,7 +266,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_5.jpg"
                                                 class="portfolio-img-gallery" title="Healthcare Management System">
-                                                <img src="assets/images/portfolio/portfolio_img_5.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_5.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -289,7 +289,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_6.jpg"
                                                 class="portfolio-img-gallery" title="Enterprise Resource Planning">
-                                                <img src="assets/images/portfolio/portfolio_img_6.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_6.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -312,7 +312,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_7.jpg"
                                                 class="portfolio-img-gallery" title="Learning Management System">
-                                                <img src="assets/images/portfolio/portfolio_img_7.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_7.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
@@ -335,7 +335,7 @@
                                         <div class="portfolio-img-gallery">
                                             <a href="assets/images/portfolio/portfolio_img_8.jpg"
                                                 class="portfolio-img-gallery" title="Real Estate Portal">
-                                                <img src="assets/images/portfolio/portfolio_img_8.jpg" class="rounded"
+                                                <img src="{{ asset('images/portfolio/portfolio_img_8.jpg')}}" class="rounded"
                                                     alt="">
                                             </a>
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
