@@ -1051,11 +1051,11 @@
                                             </li>
                                             <li>
                                                 <div><i class="bi bi-phone"></i></div>
-                                                <div><a href="tel:+94112345678">(+94) 11 234 5678</a></div>
+                                                <div><a href="tel:+94760759204">(+94) 76 075 9204</a></div>
                                             </li>
                                             <li>
                                                 <div><i class="bi bi-envelope"></i></div>
-                                                <div><a href="mailto:info@wsoft.lk">info@wsoft.lk</a></div>
+                                                <div><a href="mailto:support@wsoftglobal.com">support@wsoftglobal.com</a></div>
                                             </li>
                                         </ul>
                                     </div>
@@ -1080,7 +1080,7 @@
                     <div class="col-xxl-7 col-lg-7 mr-top-footer">
                         <div class="row">
 
-                            <div class="col-md-4 col-sm-6 col-12">
+                            <div class="col-md-3 col-sm-6 col-12">
                                 <div class="footer-widget">
                                     <h4 class="widget-title">Support</h4>
                                     <ul class="list-unstyled icons-listing mb-0 widget-listing">
@@ -1092,7 +1092,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 col-12">
+                            <div class="col-md-3 col-sm-6 col-12">
                                 <div class="footer-widget">
                                     <h4 class="widget-title">Services</h4>
                                     <ul class="list-unstyled icons-listing mb-0 widget-listing">
@@ -1105,7 +1105,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 ol-12">
+                            <div class="col-md-6 ol-12">
                                 <div class="footer-widget">
                                     <h4 class="widget-title">Contact Us</h4>
 
@@ -1117,11 +1117,11 @@
                                             </li>
                                             <li>
                                                 <div><i class="bi bi-phone"></i></div>
-                                                <div><a href="tel:+94112345678">(+94) 11 234 5678</a></div>
+                                                <div><a href="tel:+94760759204">(+94) 76 075 9204</a></div>
                                             </li>
                                             <li>
                                                 <div><i class="bi bi-envelope"></i></div>
-                                                <div><a href="mailto:info@wsoft.lk">info@wsoft.lk</a></div>
+                                                <div><a href="mailto:support@wsoftglobal.com">support@wsoftglobal.com</a></div>
                                             </li>
                                         </ul>
                                     </div>
