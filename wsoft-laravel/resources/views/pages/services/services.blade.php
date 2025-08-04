@@ -31,7 +31,7 @@
             </div>
             <nav class="navbar navbar-expand-lg header-anim">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"><img src="{{ asset('images/logo_light.svg') }}"
+                    <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo_light.svg') }}"
                             alt=""></a>
 
                     <form class="d-flex order-lg-last ms-3 align-items-center">

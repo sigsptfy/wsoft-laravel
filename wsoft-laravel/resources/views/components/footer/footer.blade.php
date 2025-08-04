@@ -41,7 +41,7 @@
                          <div class="col-xxl-5 col-md-6">
                              <div class="footer-widget">
                                  <div class="logo-footer">
-                                     <a href="index.html">
+                                     <a href="{{ url('/') }}">
                                          <img src="{{ asset('images/logo_dark.svg') }}" alt="">
                                      </a>
                                  </div>

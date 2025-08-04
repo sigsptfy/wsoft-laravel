@@ -704,7 +704,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-default"><span
+                                <a href="{{ url('/') }}" class="text-uppercase btn btn-default"><span
                                         class="outer-wrap"><span data-text="Get Started">Get Started</span></span></a>
                             </div>
                         </div>
@@ -740,7 +740,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-outline-light"><span
+                                <a href="{{ url('/') }}" class="text-uppercase btn btn-outline-light"><span
                                         class="outer-wrap"><span data-text="Get Started">Get Started</span></span></a>
                             </div>
                         </div>
@@ -772,7 +772,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-default"><span
+                                <a href="{{ url('/') }}" class="text-uppercase btn btn-default"><span
                                         class="outer-wrap"><span data-text="Get Started">Get Started</span></span></a>
                             </div>
                         </div>
@@ -803,7 +803,7 @@
                             </ul>
 
                             <div class="text-center">
-                                <a href="{{ url('/pricing') }}" class="text-uppercase btn btn-default"><span
+                                <a href="{{ url('/contact') }}" class="text-uppercase btn btn-default"><span
                                         class="outer-wrap"><span data-text="Contact Us">Contact Us</span></span></a>
                             </div>
                         </div>
