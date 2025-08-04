@@ -98,7 +98,7 @@
                                     applications, and digital solutions. Our expert team delivers scalable technology
                                     that drives growth and innovation.</p>
                                 <div class="cta-group">
-                                    <a href="javascript:" class="btn btn-primary" data-trigger="#signup"><span
+                                    <a href="javascript:" class="btn btn-primary" data-trigger="#"><span
                                             class="outer-wrap"><span data-text="Get Started">Get
                                                 Started</span></span></a>
                                     <a href="{{ url('/about') }}" class="btn btn-secondary"><span class="outer-wrap"><span
@@ -119,7 +119,7 @@
 
         <b class="screen-overlay"></b>
         <!--  Signup Form Start -->
-        <article class="mobile-offcanvas offcanvas-right" id="signup">
+        {{-- <article class="mobile-offcanvas offcanvas-right" id="signup">
             <button class="btn-close"> <i class="bi bi-x"></i> </button>
             <div class="popup-wrapper" data-lenis-prevent>
 
@@ -166,7 +166,7 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </article> --}}
         <!--  Signup Form Start -->
     </div>
     <!-- Page Header End -->
@@ -977,7 +977,7 @@
                                 efficiency for your organization.</p>
                         </div>
                         <div class="btn-set wow fadeInUp">
-                            <a href="javascript:" class="btn btn-primary" data-trigger="#signup"><span
+                            <a href="javascript:" class="btn btn-primary" data-trigger="#"><span
                                     class="outer-wrap"><span data-text="Get Free Quote">Get Free
                                         Quote</span></span></a>
                             <a href="{{ url('/contact') }}" class="btn btn-secondary"><span class="outer-wrap"><span
