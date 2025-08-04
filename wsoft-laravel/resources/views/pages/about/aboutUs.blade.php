@@ -202,7 +202,7 @@
                         </div>
                         <p class="mt-4">Ready to Get Started? <strong>Free Consultation Available - Let's Discuss
                                 Your Project</strong> Requirements Today. </p>
-                        <a href="contact.html" class="btn btn-default"><span class="outer-wrap"><span
+                        <a href="{{ url('contact') }}" class="btn btn-default"><span class="outer-wrap"><span
                                     data-text="Contact Us">Contact Us</span></span></a>
                     </div>
                 </div>
