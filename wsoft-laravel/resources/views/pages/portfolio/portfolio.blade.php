@@ -179,11 +179,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">E-commerce Platform</a></h6>
+                                        <h6><a href="#">E-commerce Platform</a></h6>
                                         <div class="sub-head">Web Development & E-commerce</div>
                                         <p>Custom online marketplace with advanced features including payment
                                             integration and inventory management system</p>
@@ -203,11 +203,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">Business Management System</a></h6>
+                                        <h6><a href="#">Business Management System</a></h6>
                                         <div class="sub-head">Custom Software Development</div>
                                         <p>Comprehensive business management solution with CRM, inventory tracking, and
                                             automated reporting capabilities</p>
@@ -226,11 +226,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">Mobile Banking App</a></h6>
+                                        <h6><a href="#">Mobile Banking App</a></h6>
                                         <div class="sub-head">Mobile App Development</div>
                                         <p>Secure banking application with biometric authentication and real-time
                                             transaction processing capabilities</p>
@@ -249,11 +249,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">Restaurant Management Portal</a></h6>
+                                        <h6><a href="#">Restaurant Management Portal</a></h6>
                                         <div class="sub-head">Web Application Development</div>
                                         <p>Complete restaurant management system with online ordering, table
                                             reservations, and staff management features</p>
@@ -272,11 +272,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">Healthcare Management System</a></h6>
+                                        <h6><a href="#">Healthcare Management System</a></h6>
                                         <div class="sub-head">Custom Software Development</div>
                                         <p>Digital healthcare platform with patient records, appointment scheduling, and
                                             telemedicine capabilities</p>
@@ -295,11 +295,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">Enterprise Resource Planning</a></h6>
+                                        <h6><a href="#">Enterprise Resource Planning</a></h6>
                                         <div class="sub-head">Enterprise Software Solution</div>
                                         <p>Comprehensive ERP system integrating finance, HR, inventory, and operations
                                             management modules</p>
@@ -318,11 +318,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">Learning Management System</a></h6>
+                                        <h6><a href="#">Learning Management System</a></h6>
                                         <div class="sub-head">Educational Platform Development</div>
                                         <p>Interactive e-learning platform with course management, student tracking, and
                                             assessment tools</p>
@@ -341,11 +341,11 @@
                                             <div class="img-over"><i class="bi bi-plus-lg"></i></div>
                                         </div>
 
-                                        <a href="portfolio-single.html" class="arrow"><i
+                                        <a href="#" class="arrow"><i
                                                 class="srn-arrow-right"></i></a>
                                     </div>
                                     <div class="item-content">
-                                        <h6><a href="portfolio-single.html">Real Estate Portal</a></h6>
+                                        <h6><a href="#">Real Estate Portal</a></h6>
                                         <div class="sub-head">Web Platform Development</div>
                                         <p>Modern real estate platform with property listings, virtual tours, and
                                             mortgage calculator features</p>
