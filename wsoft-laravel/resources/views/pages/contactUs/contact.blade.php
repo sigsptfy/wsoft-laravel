@@ -31,6 +31,12 @@
                     Your_Message: "Please enter your Message"
                 },
                 submitHandler: function() {
+                    const submitBtn = $("#contactusForm button[type='submit']");
+                    const originalText = submitBtn.text();
+
+                    // Disable and update button text
+                    submitBtn.prop("disabled", true).text("Sending...");
+
                     const formData = {
                         _token: csrfToken,
                         First_Name: $("#First_Name").val(),
@@ -38,7 +44,7 @@
                         Email_Address: $("#Email_Address").val(),
                         Phone_Number: $("#Phone_Number").val(),
                         Your_Message: $("#Your_Message").val(),
-                        Combo_Box: $("select[name='Combo_Box']").val() 
+                        Combo_Box: $("select[name='Combo_Box']").val()
                     };
 
                     $.ajax({
@@ -52,19 +58,26 @@
                             if (response.status === "success") {
                                 $('#sucessmessage').html(
                                     "<div class='alert alert-success'>Message sent successfully!</div>"
-                                    );
+                                );
                                 form.reset();
                             } else {
                                 const msg = response.message ||
                                     "Sorry, something went wrong. Please try again.";
                                 $('#sucessmessage').html(
-                                    "<div class='alert alert-danger'>" + msg + "</div>");
+                                    "<div class='alert alert-danger'>" + msg + "</div>"
+                                );
                             }
+
+                            // ✅ Re-enable button and reset text
+                            submitBtn.prop("disabled", false).text(originalText);
                         },
                         error: function() {
                             $('#sucessmessage').html(
                                 "<div class='alert alert-danger'>Server error. Please try again later.</div>"
-                                );
+                            );
+
+                            // ✅ Re-enable button on error
+                            submitBtn.prop("disabled", false).text(originalText);
                         }
                     });
 
@@ -110,9 +123,9 @@
                             <i class="srn-search"></i>
                         </a>
                         <!-- <a class="signup-btn btn btn-outline-light text-nowrap" data-trigger="#signup">
-                                                        <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
-                                                        <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
-                                                    </a> -->
+                                                                        <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
+                                                                        <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
+                                                                    </a> -->
                         <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                             aria-label="Toggle navigation">
