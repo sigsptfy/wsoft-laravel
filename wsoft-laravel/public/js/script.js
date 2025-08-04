@@ -72,27 +72,27 @@ Table of Content
 
 
 
-    if($("#yearText").length > 0){
+    if ($("#yearText").length > 0) {
         document.getElementById("yearText").innerHTML = new Date().getFullYear();
     }
 
-    $("[data-trigger]").on("click", function(e){
+    $("[data-trigger]").on("click", function (e) {
         e.preventDefault();
         e.stopPropagation();
-        var offcanvas_id =  $(this).attr('data-trigger');
+        var offcanvas_id = $(this).attr('data-trigger');
         $(offcanvas_id).toggleClass("show");
         $('body').toggleClass("offcanvas-active");
         $(".screen-overlay").toggleClass("show");
     });
-    $(document).on('keydown', function(event) {
-        if(event.keyCode === 27) {
-           $(".mobile-offcanvas").removeClass("show");
-           $(".screen-overlay").removeClass("show");
-           $("body").removeClass("overlay-active");
+    $(document).on('keydown', function (event) {
+        if (event.keyCode === 27) {
+            $(".mobile-offcanvas").removeClass("show");
+            $(".screen-overlay").removeClass("show");
+            $("body").removeClass("overlay-active");
         }
     });
 
-    $(".btn-close, .screen-overlay").on("click", function(e){
+    $(".btn-close, .screen-overlay").on("click", function (e) {
         $(".screen-overlay").removeClass("show");
         $(".mobile-offcanvas").removeClass("show");
         $("body").removeClass("offcanvas-active");
@@ -101,49 +101,49 @@ Table of Content
     var headerHeight = $('header').height();
     $('header').css('height', headerHeight);
 
-    $(window).on('load, resize, scroll', function() {
+    $(window).on('load, resize, scroll', function () {
         var headerHeight = $('header').height();
         $('header').css('height', headerHeight);
 
     });
 
     /* On Scroll Text Effect */
-	if ($('.section-title h2, .title h1').length) {
-		let	animatedTextElements = document.querySelectorAll('.section-title h2, .title h1');
+    if ($('.section-title h2, .title h1').length) {
+        let animatedTextElements = document.querySelectorAll('.section-title h2, .title h1');
 
-		 animatedTextElements.forEach((element) => {
-			//Reset if needed
-			if (element.animation) {
-				element.animation.progress(1).kill();
-				element.split.revert();
-			}
+        animatedTextElements.forEach((element) => {
+            //Reset if needed
+            if (element.animation) {
+                element.animation.progress(1).kill();
+                element.split.revert();
+            }
 
-			element.split = new SplitText(element, {
-				type: "lines,words,chars",
-				linesClass: "split-line",
-			});
-			gsap.set(element, { perspective: 400 });
+            element.split = new SplitText(element, {
+                type: "lines,words,chars",
+                linesClass: "split-line",
+            });
+            gsap.set(element, { perspective: 400 });
 
-			gsap.set(element.split.chars, {
-				opacity: 0,
-				x: "50",
-			});
+            gsap.set(element.split.chars, {
+                opacity: 0,
+                x: "50",
+            });
 
-			element.animation = gsap.to(element.split.chars, {
-				scrollTrigger: { trigger: element,	start: "top 90%" },
-				x: "0",
-				y: "0",
-				rotateX: "0",
-				opacity: 1,
-				duration: 1,
-				ease: Back.easeOut,
-				stagger: 0.02,
-			});
-		});
-	}
+            element.animation = gsap.to(element.split.chars, {
+                scrollTrigger: { trigger: element, start: "top 90%" },
+                x: "0",
+                y: "0",
+                rotateX: "0",
+                opacity: 1,
+                duration: 1,
+                ease: Back.easeOut,
+                stagger: 0.02,
+            });
+        });
+    }
 
-     // Loader Animation
-     $(window).on("load",function () {
+    // Loader Animation
+    $(window).on("load", function () {
         $("#pageloader").delay(500).fadeOut("slow");
         $(".loader-item").delay(700).fadeOut();
     });
@@ -176,7 +176,7 @@ Table of Content
         },
 
         toggle_active: function () {
-            jQuery( '.toggle-active' ).on( "click", function(event) {
+            jQuery('.toggle-active').on("click", function (event) {
                 jQuery(this).toggleClass("active");
             })
         },
@@ -275,7 +275,7 @@ Table of Content
                     }
                 });
 
-                $('.back-to-top').on('click', function(e) {
+                $('.back-to-top').on('click', function (e) {
                     $("html, body").animate({
                         scrollTop: 0
                     }, 600);
@@ -372,18 +372,18 @@ Table of Content
             });
         },
 
-        portfolio_gallery : function(){
+        portfolio_gallery: function () {
 
-            if( $('.portfolio-img-gallery').length ){
+            if ($('.portfolio-img-gallery').length) {
 
-                $('.portfolio-img-gallery').each(function() { // the containers for all your galleries
+                $('.portfolio-img-gallery').each(function () { // the containers for all your galleries
                     $(this).magnificPopup({
                         delegate: 'a', // the selector for gallery item
                         type: 'image',
                         gallery: {
                             enabled: true, // set to true to enable gallery
 
-                            preload: [0,2], // read about this option in next Lazy-loading section
+                            preload: [0, 2], // read about this option in next Lazy-loading section
 
                             navigateByImgClick: true,
 
@@ -427,9 +427,9 @@ Table of Content
 
 
         // All Owl Carousel Slider
-        slider_testimonials_shadow : function(){
+        slider_testimonials_shadow: function () {
 
-            if( $('#testimonials-slider-shadow').length ){
+            if ($('#testimonials-slider-shadow').length) {
 
                 $('#testimonials-slider-shadow').owlCarousel({
 
@@ -442,7 +442,7 @@ Table of Content
                     smartSpeed: 1000,
                     nav: false,
                     dots: true,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>'],
                     responsive: {
                         0: {
@@ -462,9 +462,9 @@ Table of Content
             }
         },
 
-        slider_portfolio_single : function(){
+        slider_portfolio_single: function () {
 
-            if( $('#portfolio-slider-single').length ){
+            if ($('#portfolio-slider-single').length) {
 
                 $('#portfolio-slider-single').owlCarousel({
                     loop: true,
@@ -476,15 +476,15 @@ Table of Content
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>']
                 });
             }
         },
 
-        portfolio_related_slider : function(){
+        portfolio_related_slider: function () {
 
-            if( $('#portfolio-related-slider').length ){
+            if ($('#portfolio-related-slider').length) {
 
                 $('#portfolio-related-slider').owlCarousel({
                     loop: true,
@@ -496,7 +496,7 @@ Table of Content
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>'],
                     responsive: {
                         0: {
@@ -513,9 +513,9 @@ Table of Content
             }
         },
 
-        services_related_slider : function(){
+        services_related_slider: function () {
 
-            if( $('#services-related-slider').length ){
+            if ($('#services-related-slider').length) {
 
                 $('#services-related-slider').owlCarousel({
                     loop: true,
@@ -527,7 +527,7 @@ Table of Content
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>'],
                     responsive: {
                         0: {
@@ -547,9 +547,9 @@ Table of Content
             }
         },
 
-        marketing_banner_slider : function(){
+        marketing_banner_slider: function () {
 
-            if( $('#marketing-banner-slider').length ){
+            if ($('#marketing-banner-slider').length) {
 
                 $('#marketing-banner-slider').owlCarousel({
                     loop: true,
@@ -561,7 +561,7 @@ Table of Content
                     smartSpeed: 1000,
                     nav: false,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>'],
                     responsive: {
                         0: {
@@ -584,9 +584,9 @@ Table of Content
             }
         },
 
-        slider_testimonials_leftimg : function(){
+        slider_testimonials_leftimg: function () {
 
-            if( $('#testimonials-slider-leftimg').length ){
+            if ($('#testimonials-slider-leftimg').length) {
 
                 $('#testimonials-slider-leftimg').owlCarousel({
 
@@ -594,21 +594,21 @@ Table of Content
                     margin: 30,
                     autoplay: false,
                     slideBy: 1,
-                    items:1,
+                    items: 1,
                     center: true,
                     autoplayTimeout: 3000,
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>']
                 });
             }
         },
 
-        slider_testimonials_single : function(){
+        slider_testimonials_single: function () {
 
-            if( $('#testimonials-slider-single').length ){
+            if ($('#testimonials-slider-single').length) {
 
                 $('#testimonials-slider-single').owlCarousel({
 
@@ -616,21 +616,21 @@ Table of Content
                     margin: 30,
                     autoplay: true,
                     slideBy: 1,
-                    items:1,
+                    items: 1,
                     center: true,
                     autoplayTimeout: 3000,
                     smartSpeed: 1000,
                     nav: false,
                     dots: true,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>']
                 });
             }
         },
 
-        slider_blog_post : function(){
+        slider_blog_post: function () {
 
-            if( $('#blog-post').length ){
+            if ($('#blog-post').length) {
 
                 $('#blog-post').owlCarousel({
 
@@ -638,21 +638,21 @@ Table of Content
                     margin: 0,
                     autoplay: false,
                     slideBy: 1,
-                    items:1,
+                    items: 1,
                     center: true,
                     autoplayTimeout: 3000,
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>']
                 });
             }
         },
 
-        client_default_home_slider : function(){
+        client_default_home_slider: function () {
 
-            if( $('#client-home-default').length ){
+            if ($('#client-home-default').length) {
 
                 $('#client-home-default').owlCarousel({
 
@@ -665,7 +665,7 @@ Table of Content
                     smartSpeed: 1000,
                     nav: false,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>'],
                     responsive: {
                         0: {
@@ -685,9 +685,9 @@ Table of Content
             }
         },
 
-        home_default_testimonials : function(){
+        home_default_testimonials: function () {
 
-            if( $('#home-default-testimonials').length ){
+            if ($('#home-default-testimonials').length) {
 
                 $('#home-default-testimonials').owlCarousel({
 
@@ -700,7 +700,7 @@ Table of Content
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>'],
                     responsive: {
                         0: {
@@ -717,9 +717,9 @@ Table of Content
             }
         },
 
-        home_coworking_banner : function(){
+        home_coworking_banner: function () {
 
-            if( $('#home-coworking-banner').length ){
+            if ($('#home-coworking-banner').length) {
 
                 $('#home-coworking-banner').owlCarousel({
 
@@ -732,15 +732,15 @@ Table of Content
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>']
                 });
             }
         },
 
-        home_space_solutions : function(){
+        home_space_solutions: function () {
 
-            if( $('#coworking-space-solutions').length ){
+            if ($('#coworking-space-solutions').length) {
 
                 $('#coworking-space-solutions').owlCarousel({
 
@@ -755,7 +755,7 @@ Table of Content
                     smartSpeed: 1000,
                     nav: true,
                     dots: false,
-                    autoplayHoverPause:true,
+                    autoplayHoverPause: true,
                     navText: ['<i class="srn-arrow-left"></i>', '<i class="srn-arrow-right"></i>'],
                     responsive: {
                         0: {
@@ -777,44 +777,54 @@ Table of Content
         // All Owl Carousel Slider
 
 
-        wow_animation : function(){
+        wow_animation: function () {
 
-        var wow = new WOW(
-            {
-                boxClass: 'wow',      // default
-                animateClass: 'animated', // default
-                offset: 0,          // default
-                mobile: true,       // default
-                live: true        // default
-            }
-        )
-        wow.init();
+            var wow = new WOW(
+                {
+                    boxClass: 'wow',      // default
+                    animateClass: 'animated', // default
+                    offset: 0,          // default
+                    mobile: true,       // default
+                    live: true        // default
+                }
+            )
+            wow.init();
         },
 
-        contact_form_validate : function(){
-            $("#contactusForm").validate({
-                submitHandler: function (form) {
+        // contact_form_validate: function () {
+        //     $("#contactusForm").validate({
+        //         submitHandler: function (form) {
 
-                    var s_name = $("#First_Name").val();
-                    var s_lastname = $("#Last_Name").val();
-                    var s_email = $("#Email_Address").val();
-                    var s_phone = $("#Phone_Number").val();
-                    var s_comment = $("#Your_Message").val();
-                    $.post("contact_process.php", {
-                        name: s_name,
-                        lastname: s_lastname,
-                        email: s_email,
-                        phone: s_phone,
-                        comment: s_comment
-                    },
-                        function (result) {
-                            $('#sucessmessage').append(result);
-                        });
-                    $('#contactusForm').hide();
-                    return false;
-                },
-            });
-        },
+        //             var s_name = $("#First_Name").val();
+        //             var s_lastname = $("#Last_Name").val();
+        //             var s_email = $("#Email_Address").val();
+        //             var s_phone = $("#Phone_Number").val();
+        //             var s_comment = $("#Your_Message").val();
+
+        //             $.post("{{ route('contact.submit') }}", {
+        //                 name: s_name,
+        //                 lastname: s_lastname,
+        //                 email: s_email,
+        //                 phone: s_phone,
+        //                 comment: s_comment
+        //             },
+        //                 function (result) {
+        //                     // Clear previous message
+        //                     $('#sucessmessage').empty();
+
+        //                     // Check result contains "success" or some indicator (customize as needed)
+        //                     if (result.includes("success")) {
+        //                         $('#sucessmessage').append("<div class='alert alert-success'>Message sent successfully!</div>");
+        //                         form.reset(); // Clear form
+        //                     } else {
+        //                         $('#sucessmessage').append("<div class='alert alert-danger'>Sorry, something went wrong. Please try again.</div>");
+        //                     }
+        //                 });
+
+        //             return false; // Prevent default form submission
+        //         },
+        //     });
+        // },
 
         initializ: function () {
 

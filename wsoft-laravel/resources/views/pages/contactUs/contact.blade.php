@@ -2,6 +2,54 @@
 
 @section('title', 'Contact - Wsoft Fullstack Software Solutions & Development Services')
 
+@section('page-js')
+    <script>
+        $(document).ready(function() {
+            $("#contactusForm").validate({
+                rules: {
+                    First_Name: {
+                        required: true
+                    },
+                    Last_Name: {
+                        required: true
+                    },
+                    Email_Address: {
+                        required: true,
+                        email: true
+                    },
+                    Phone_Number: {
+                        required: true
+                    },
+                    Your_Message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    First_Name: "Please enter your First Name",
+                    Last_Name: "Please enter your Last Name",
+                    Email_Address: {
+                        required: "Please enter your Email",
+                        email: "Please enter a valid Email"
+                    },
+                    Phone_Number: "Please enter your Phone Number",
+                    Your_Message: "Please enter your Message"
+                },
+                errorElement: "div",
+                errorPlacement: function(error, element) {
+                    error.addClass("text-danger mt-1");
+                    element.closest(".col-md-6, .col-md-12").append(error);
+                },
+                highlight: function(element) {
+                    $(element).addClass("is-invalid");
+                },
+                unhighlight: function(element) {
+                    $(element).removeClass("is-invalid");
+                }
+            });
+        });
+    </script>
+@endsection
+
 @section('content')
 
     <!-- Page Header Start -->
@@ -37,9 +85,9 @@
                             <i class="srn-search"></i>
                         </a>
                         <!-- <a class="signup-btn btn btn-outline-light text-nowrap" data-trigger="#signup">
-                                            <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
-                                            <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
-                                        </a> -->
+                                                    <span class="d-none d-sm-inline-block"><span class="outer-wrap"><span data-text="Sing Up">Sing Up</span></span></span>
+                                                    <span class="d-block d-sm-none"><i class="bi bi-door-closed"></i></span>
+                                                </a> -->
                         <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -156,8 +204,9 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-9 col-md-12 mx-auto">
                         <div id="sucessmessage"> </div>
-                        <form action="https://mannatstudio.com/html/serenite/contact_process.php" method="post"
-                            id="contactusForm" novalidate="novalidate">
+                        <form action="{{ route('contact.submit') }}" method="post" id="contactusForm"
+                            novalidate="novalidate">
+                            @csrf
                             <div class="row g-3">
                                 <div class="col-md-6 mb-0">
                                     <input type="text" data-rule-required="true"
