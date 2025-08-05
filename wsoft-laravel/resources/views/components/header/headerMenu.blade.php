@@ -13,16 +13,7 @@
          <li class="nav-item dropdown">
              <a class="nav-link" href="{{ url('/services') }}" aria-expanded="false">Services</a>
          </li>
-         <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                                    <li><a class="dropdown-item" href="faqs.html">Faqs</a></li>
-                                    <li><a class="dropdown-item" href="our-pricing.html">Our Pricing</a></li>
-                                    <li><a class="dropdown-item" href="coming-soon.html">Coming soon</a></li>
-                                    <li><a class="dropdown-item" href="404-page.html">404 Page</a></li>
-                                </ul>
-                            </li> -->
+
          <li class="nav-item dropdown">
              <a class="nav-link" href="{{ url('/portfolio') }}" aria-expanded="false">Portfolio</a>
              <!-- <ul class="dropdown-menu">
@@ -33,8 +24,7 @@
                                 </ul> -->
          </li>
          <li class="nav-item dropdown">
-             <a class="nav-link " href="{{ url('/about') }}"
-                 aria-expanded="false">About</a>
+             <a class="nav-link " href="{{ url('/about') }}" aria-expanded="false">About</a>
              {{-- <ul class="dropdown-menu">
                  <li><a class="dropdown-item" href="{{ url('/about') }}">About Us</a></li>
                  <li><a class="dropdown-item" href="{{ url('/about/team') }}">Our Team</a></li>
