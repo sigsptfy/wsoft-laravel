@@ -9,11 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>@yield('title')</title>
 
-    <meta name="author" content="Mannat Studio">
-    <meta name="description"
-        content="Wsoft is a Responsive HTML5 Template for SaaS, cryptocurrency, app and tech companies, as well as for digital studios.">
-    <meta name="keywords"
-        content="Wsoft, themeforest template, app, app landing page, App Showcase, cryptocurrency, digital studio, saas, saas landing, saas theme, software, software company website, software startup, startup, startup landing page, startup wordpress, technology">
+
     <!-- CRSR token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
